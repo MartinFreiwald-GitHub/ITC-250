@@ -1,0 +1,75 @@
+<?php
+/* result page */
+?>
+<?php
+// get the data from the form
+$celsius_to_fahrenheit = $_GET[‘celsius_to_fahrenheit’];
+
+// calculate the conversion(s)
+// 1.  calculate the conversion of celsius to fahrenheit
+$celcius_refference = 1.8;
+$celsius_to_fahrenheit * $celcius_refference + 32;
+
+// apply formatting
+$celsius_to_fahrenheit_formatted = "$" .number_format($celsius_to_fahrenheit, 2 );
+$tmp_fahrenheit_formatted = "$" .number_format($tmp_fahrenheit, 2 );
+
+// escape the unformatted input
+$celsius_to_fahrenheit = htmlspecialchars($celsius_to_fahrenheit);
+$tmp_fahrenheit = htmlspecialchars($tmp_fahrenheit);
+ 
+// temp_celsius times celcius_refference increment by 32
+
+// How to calculate 9/5 = 1.8 , with that take 39(1.8)+32= 102.2 round it to 2 decimals.  
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Temperature conversion</title>
+    <link rel= "stylesheet" type= "text/css" href= "main.css" >
+</head>
+<body>
+    <main>
+        <h1>Temperature Conversion</h1>
+
+        temperature conversion type:<br>
+        <input type="radio" name="celsius_to_fahrenheit" value="celsius_to_fahrenheit">celsius_to_fahrenheit<br>
+             <form action ="temp_celsius.php" method="post">
+                <div id="data">
+                    <label>temp_celsius</label>
+                    <input type ="text" name="temp_celsius"><br>
+
+        <input type="radio" name="fahrenheit_to_celsius" value="fahrenheit_to_celsius">fahrenheit_to_celsius<br>
+             <form action ="tmp_fahrenheit.php" method="post">
+                <div id="data">
+                    <label>tmp_fahrenheit</label>
+                    <input type ="text" name="tmp_fahrenheit"><br>            
+    
+
+                </div>
+                <div id="buttons">
+                    <label>&nbsp;</label>
+                    <input type="submit" value="Submit"><br>
+                </div>
+            </form>  <-- This tag form is used inside this page instead of two pages if you-->    
+
+        <label>input celsius_to_fahrenheit</label>
+        <span> <?php echo $input_celsius_to_fahrenheit_formatted; ?> </span><br>
+
+        <label>conversion is:</label>
+        <span> <?php echo $conversion_formatted ." " ; echo $message ; ?> </span><br>
+
+<?php
+//         $rNum = mt_rand(5,7);
+// for($i = 0; $i <=10; $i++){
+//     if ($i == $rNum){
+//          echo $rNum . " is your random number. <br>";
+//      } else { 
+//          echo $i.'<br>';
+//     }
+// } ?>
+    </main>
+</body>
+</html>
+
