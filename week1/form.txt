@@ -1,0 +1,13 @@
+<?php
+//form.php  condition in side () what to do in {} The $_POST is a //superglobal Saves in a write and array.  Saves in a key value //pair.
+if(isset($_POST["FirstName"])){
+   echo $_POST["FirstName"];
+}else{
+   echo '
+        <form action="" method="POST">
+            <p> First Name: <input type="text" name="FirstName"/></p>
+            <p><input type="submit"/></p>
+        </form>
+   ';
+};
+?>   
