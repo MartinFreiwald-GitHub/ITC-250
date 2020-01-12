@@ -1,0 +1,29 @@
+<?php
+//form2.php Radio buttons
+if(isset($_POST["FirstName"])){
+   echo '<pre>';
+   var_dump($_POST);
+   //SHOWS ARRAY OF POSTED DATA
+   echo '</pre>';
+}else{
+   echo '
+        <form action="" method="POST">
+            <p> First Name: <input type="text" name"FirstName"/></p>
+            <fieldset>
+                <legend>Favorite people</legend>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other
+            </fieldset>
+            <fieldset>
+                <legend>Favorite toppings</legend>
+                <input type="radio" name="Favorite toppings" value="bolts"> bolts<br>
+                <input type="radio" name="Favorite toppings" value="gravel"> gravel<br>
+                <input type="radio" name="Favorite toppings" value="sand"> sand
+                <p><input type="submit"/></p>
+            </fieldset>  
+            
+        </form>
+    ';
+};
+?>   
