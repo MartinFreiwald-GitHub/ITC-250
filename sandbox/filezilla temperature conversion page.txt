@@ -1,0 +1,7 @@
+link to web server where tempurature conversion assignment page is:
+
+http://www.milkyway-games.com/scc/sandbox/g1.php
+
+and the link in side of the above page is
+
+https://docs.google.com/document/d/1X8vZvMHgvqR6yFRKa5bvprdZBvr_j85GSnMqvEVPHik/edit
