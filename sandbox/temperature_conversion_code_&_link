@@ -60,3 +60,11 @@ if(isset($_POST["convert"])){
        </form>
    ';
 };
+
+Work Log: 
+1/15/2020: Daphne finished all code part and test it on server. (3 hours)
+1/15/2020: Daphne created google doc for project document of P1 and copy source code, writing work log. (10min)
+1/16/2020 Martin writes his own version of the source code from past assignment and fails to work (3 hrs)
+1/18/2020 Martin helps identify a conversion issue with Daphne.  (20 min)
+1/20/2020 Martin tests the conversion issue and its resolved (10 min)
+
