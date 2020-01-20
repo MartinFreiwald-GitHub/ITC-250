@@ -1,0 +1,17 @@
+
+
+        <form action="" method="POST">
+            Please enter degrees to convert:<input type="text" name="degree" /><br />
+            <fieldset>
+                <legend>Please select an option to convert degrees</legend>
+                <p><input type="radio" name="choice" value="fc" />Fahrenheit to Celsius<br /></p>
+                <p><input type="radio" name="choice" value="cf" />Celsius to Fahrenheit<br /><br /></p>
+                <p><input type="radio" name="choice" value="fk" />Fahrenheit to Kelvin<br /></p>
+                <p><input type="radio" name="choice" value="kf" />Kelvin to Fahrenheit<br /><br /></p>
+                <p><input type="radio" name="choice" value="ck" />Celsius to Kelvin<br /></p>
+                <p><input type="radio" name="choice" value="kc" />Kelvin to Celsius<br /><br /></p>
+            </fieldset>
+            <p><input type="submit" name="convert" value="Convert" /></p>
+            <br /><br /><a href="https://docs.google.com/document/d/1X8vZvMHgvqR6yFRKa5bvprdZBvr_j85GSnMqvEVPHik/edit">Project Document</a></button>
+        </form>
+    
